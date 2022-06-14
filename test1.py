@@ -4,7 +4,7 @@ def add_two_numbers(number_1, number_2):
 
     try:
         result = int(number_1) / int(number_2)
-    except ValueError:
+    except (ValueError, TypeError):
         return 34
     finally:
         print("the finally block")
